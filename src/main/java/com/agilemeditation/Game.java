@@ -6,7 +6,7 @@ public class Game {
   private int score;
   private Roll previousScores[] = new Roll[2];
   private int rollCount;
-  private boolean nextRollTerminatesFrame = false;
+  private boolean rollCompletesFrame = false;
 
   public int getScore() {
     return score;
@@ -21,23 +21,23 @@ public class Game {
       score += currentRollScore;
     }
 
-    if (nextRollTerminatesFrame) {
+    if (rollCompletesFrame) {
       //Spare or 'normal' frame scenarios
       if (getRoll(rollCount - 1).getScore() + currentRollScore == MAX_PINS) {
         storeCurrentRoll(new Roll(currentRollScore, Bonus.SPARE));
       } else {
         storeCurrentRoll(new Roll(currentRollScore, Bonus.NONE));
       }
-      nextRollTerminatesFrame = false;
+      rollCompletesFrame = false;
     } else {
       if (currentRollScore == MAX_PINS) {
         // Strike scenario
         storeCurrentRoll(new Roll(currentRollScore, Bonus.STRIKE));
-        nextRollTerminatesFrame = false;
+        rollCompletesFrame = false;
       } else {
         // First roll 'normal' scenario
         storeCurrentRoll(new Roll(currentRollScore, Bonus.NONE));
-        nextRollTerminatesFrame = true;
+        rollCompletesFrame = true;
       }
     }
 
