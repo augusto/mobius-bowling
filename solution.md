@@ -8,6 +8,7 @@ strikes.
 be awarded in future rolls.
 * I don't really like the flag `rollCompletesFrame`.
 * The chain of `if` clauses is confusing.
+* Cannot deal with extreme long games, as the score or the circular buffer index would overflow.
 
 ## Things that surprised me
 * The code is actually quite compact in a nice way.
