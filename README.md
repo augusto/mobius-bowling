@@ -10,6 +10,9 @@ This is a new take on the famous [10 pin bowling game kata](http://codingdojo.or
 ## Why?
 This variant helps to think in terms of infinite streams of data and how to build and design a solution that can work in these scenarios.
 
+Also, because most (if not all) of the solutions I've seen use an array/list to store all the rolls before calculating
+the final score
+
 ## Bowling scoring rules
 Please see [bowling-rules.md](bowling-rules.md).
 
