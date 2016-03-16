@@ -1,7 +1,7 @@
 # Möbius Bowling
-Long Long time ago
-In a galaxy far away
-Someone started playing Bowling...
+Long Long time ago  
+In a galaxy far away  
+Someone started playing Bowling...  
 and that person is still playing
 
 # What?
