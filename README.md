@@ -4,16 +4,16 @@ In a galaxy far away
 Someone started playing Bowling...  
 and that person is still playing
 
-# What?
+## What?
 This is a new take on the famous [10 pin bowling game kata](http://codingdojo.org/cgi-bin/index.pl?KataBowling), but with a twist: the game doesn't finish on the 10th frame, but it keeps going and going and going.
 
-# Why?
+## Why?
 This variant helps to think in terms of infinite streams of data and how to build and design a solution that can work in these scenarios.
 
-# Bowling scoring rules
+## Bowling scoring rules
 Please see [bowling-rules.md](bowling-rules.md).
 
-# Goal
+## Goal
 The goal is to be able to report the partial score at any point in time, even if there are strike or spare bonuses that cannot be fully
 calculated yet.
 
